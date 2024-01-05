@@ -703,18 +703,36 @@
       display: none;
     }
   }
-  .slick-next {
-    background: url(../vendor/slick/icon_arrow_right.png) center center no-repeat;
-    background-size: 80%;
-    @include screen('mobile') {
-      right: 0.5em;
+  .slick-prev {
+    background: url(../images/slick/arrow_left.svg) no-repeat center center;
+    background-size: 50%;
+    width: 60px !important;
+    height: 60px !important;
+    // border: 2px solid $primaryColor;
+    border-radius: 50%;
+    left: -70px;
+    &:hover {
+      background-color: #eee;
+      box-shadow: 0px 0px 0px 2px $primaryColor inset;
+    }
+    &:focus {
+      box-shadow: 0px 0px 0px 2px $primaryColor inset;
     }
   }
-  .slick-prev {
-    background: url(../vendor/slick/icon_arrow_left.png) center center no-repeat;
-    background-size: 80%;
-    @include screen('mobile') {
-      left: 0.5em;
+  .slick-next {
+    background: url(../images/slick/arrow_right.svg) no-repeat center center;
+    background-size: 50%;
+    width: 60px !important;
+    height: 60px !important;
+    // border: 2px solid $primaryColor;
+    border-radius: 50%;
+    right: -70px;
+    &:hover {
+      background-color: #eee;
+      box-shadow: 0px 0px 0px 2px $primaryColor inset;
+    }
+    &:focus {
+      box-shadow: 0px 0px 0px 2px $primaryColor inset;
     }
   }
   .Slider-for {
@@ -785,5 +803,37 @@
   // dots
   .slick-dots {
     bottom: -3.5em;
+  }
+  .slick-prev {
+    background: url(../images/slick/arrow_left_white.svg) no-repeat center center;
+    background-size: 50%;
+    width: 60px !important;
+    height: 60px !important;
+    // border: 2px solid #fff;
+    border-radius: 50%;
+    left: 0px;
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.3);
+      box-shadow: 0px 0px 0px 2px #eee inset;
+    }
+    &:focus {
+      box-shadow: 0px 0px 0px 2px #eee inset;
+    }
+  }
+  .slick-next {
+    background: url(../images/slick/arrow_right_white.svg) no-repeat center center;
+    background-size: 50%;
+    width: 60px !important;
+    height: 60px !important;
+    // border: 2px solid #fff;
+    border-radius: 50%;
+    right: 0px;
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.3);
+      box-shadow: 0px 0px 0px 2px #eee inset;
+    }
+    &:focus {
+      box-shadow: 0px 0px 0px 2px #eee inset;
+    }
   }
 }

@@ -8401,23 +8401,35 @@ a:focus .fileType.other {
     display: none;
   }
 }
-.Syncing_slider .slick-next {
-  background: url(../vendor/slick/icon_arrow_right.png) center center no-repeat;
-  background-size: 80%;
-}
-@media screen and (max-width: 767px) {
-  .Syncing_slider .slick-next {
-    right: 0.5em;
-  }
-}
 .Syncing_slider .slick-prev {
-  background: url(../vendor/slick/icon_arrow_left.png) center center no-repeat;
-  background-size: 80%;
+  background: url(../images/slick/arrow_left.svg) no-repeat center center;
+  background-size: 50%;
+  width: 60px !important;
+  height: 60px !important;
+  border-radius: 50%;
+  left: -70px;
 }
-@media screen and (max-width: 767px) {
-  .Syncing_slider .slick-prev {
-    left: 0.5em;
-  }
+.Syncing_slider .slick-prev:hover {
+  background-color: #eee;
+  box-shadow: 0px 0px 0px 2px #003f60 inset;
+}
+.Syncing_slider .slick-prev:focus {
+  box-shadow: 0px 0px 0px 2px #003f60 inset;
+}
+.Syncing_slider .slick-next {
+  background: url(../images/slick/arrow_right.svg) no-repeat center center;
+  background-size: 50%;
+  width: 60px !important;
+  height: 60px !important;
+  border-radius: 50%;
+  right: -70px;
+}
+.Syncing_slider .slick-next:hover {
+  background-color: #eee;
+  box-shadow: 0px 0px 0px 2px #003f60 inset;
+}
+.Syncing_slider .slick-next:focus {
+  box-shadow: 0px 0px 0px 2px #003f60 inset;
 }
 .Syncing_slider .Slider-for {
   width: 80%;
@@ -8510,6 +8522,36 @@ a:focus .fileType.other {
 }
 .bookslider .slick-dots {
   bottom: -3.5em;
+}
+.bookslider .slick-prev {
+  background: url(../images/slick/arrow_left_white.svg) no-repeat center center;
+  background-size: 50%;
+  width: 60px !important;
+  height: 60px !important;
+  border-radius: 50%;
+  left: 0px;
+}
+.bookslider .slick-prev:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 0px 2px #eee inset;
+}
+.bookslider .slick-prev:focus {
+  box-shadow: 0px 0px 0px 2px #eee inset;
+}
+.bookslider .slick-next {
+  background: url(../images/slick/arrow_right_white.svg) no-repeat center center;
+  background-size: 50%;
+  width: 60px !important;
+  height: 60px !important;
+  border-radius: 50%;
+  right: 0px;
+}
+.bookslider .slick-next:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 0px 2px #eee inset;
+}
+.bookslider .slick-next:focus {
+  box-shadow: 0px 0px 0px 2px #eee inset;
 }
 
 .function_panel {
