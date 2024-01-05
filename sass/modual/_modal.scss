@@ -1,0 +1,255 @@
+// hyui flex 預設 demo
+.modal {
+  position: fixed;
+  display: none;
+  width: 400px;
+  height: 300px;
+  background: #fff;
+  z-index: 99999999;
+  top: 5%;
+  left: 50%;
+  margin-left: -200px;
+  padding: 1em 1em 1em;
+  box-sizing: border-box;
+  border-radius: 8px;
+  box-shadow: 1px 1px 15px RGBA(0, 0, 0, 0.5);
+  animation: scaleUp 0.5s ease-out;
+  h2 {
+    border-bottom: 1px solid $primaryColor;
+    padding-bottom: 0.5em;
+  }
+  .close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 30px !important;
+    min-width: auto;
+    height: 30px;
+    font-size: 0em;
+    border: none;
+    display: block;
+    padding: 0;
+    background: url(../images/basic/icon_close.svg) no-repeat center center;
+    &:hover,
+    &:focus {
+      cursor: pointer;
+    }
+  }
+}
+@keyframes scaleUp {
+  0% {
+    transform: scale(1) translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1) translateY(0px);
+    opacity: 1;
+  }
+}
+.modal_overlay {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: RGBA(0, 0, 0, 0.5);
+  z-index: 99999998;
+}
+
+// 檔案類型圖示 //
+.downloadFiles {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-flow: row wrap;
+
+  li {
+    display: flex;
+    align-items: center;
+    margin: 3px 1px 3px 8px;
+    a {
+      display: block;
+      margin: 0;
+      padding: 0;
+      width: 2rem;
+      height: 2.5rem;
+      text-decoration: none;
+      background-color: #e2e5e7;
+      border-radius: 5px;
+      position: relative;
+      &:after {
+        content: '';
+        border: 4px solid #b1b7bc;
+        border-color: #fff #fff #b1b7bc #b1b7bc;
+        border-radius: 2px;
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+      &:hover {
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 3px;
+      }
+    }
+    .fileSize {
+      font-size: 0.9rem;
+      color: $fontColor;
+      display: inline-block;
+      margin-left: 3px;
+    }
+  }
+}
+.fileType {
+  display: block;
+  position: absolute;
+  top: 16px;
+  left: -4px;
+  right: auto;
+  height: 18px;
+  width: 2.5em;
+  border-radius: 1px;
+  line-height: 1rem;
+  font-size: 0.75rem;
+  text-decoration: none;
+  text-align: left;
+  color: #fff;
+  background: #e2e5e7;
+  transition: 0.2s;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: #cbd1d7 0px 2px 0px;
+
+  &.pdf {
+    background: #c00;
+    &:hover,
+    &:focus {
+      box-shadow: rgba(255, 255, 255, 0.6) 0 0 0 1px inset, #c00 0 0 0 2px;
+    }
+  }
+  &.doc,
+  &.docx,
+  &.odt {
+    background: #1b76cb;
+    &:hover,
+    &:focus {
+      box-shadow: rgba(255, 255, 255, 0.6) 0 0 0 1px inset, #1b76cb 0 0 0 2px;
+    }
+  }
+  &.xls,
+  &.xlsx,
+  &.csv,
+  &.ods {
+    background: #48920f;
+    &:hover,
+    &:focus {
+      box-shadow: rgba(255, 255, 255, 0.6) 0 0 0 1px inset, #48920f 0 0 0 2px;
+    }
+  }
+  &.ppt,
+  &.pptx,
+  &.odp {
+    background: #c43e1c;
+    &:hover,
+    &:focus {
+      box-shadow: rgba(255, 255, 255, 0.6) 0 0 0 1px inset, #c43e1c 0 0 0 2px;
+    }
+  }
+  &.txt {
+    background: #1d98e4;
+    &:hover,
+    &:focus {
+      box-shadow: rgba(255, 255, 255, 0.6) 0 0 0 1px inset, #1d98e4 0 0 0 2px;
+    }
+  }
+  &.jpg {
+    background: #0b9fb2;
+    &:hover,
+    &:focus {
+      box-shadow: rgba(255, 255, 255, 0.6) 0 0 0 1px inset, #0b9fb2 0 0 0 2px;
+    }
+  }
+  &.mp3,
+  &.mp4 {
+    background: #9d3a89;
+    &:hover,
+    &:focus {
+      box-shadow: rgba(255, 255, 255, 0.6) 0 0 0 1px inset, #9d3a89 0 0 0 2px;
+    }
+  }
+  &.mov,
+  &.wmv {
+    background: #5843a9;
+    &:hover,
+    &:focus {
+      box-shadow: rgba(255, 255, 255, 0.6) 0 0 0 1px inset, #5843a9 0 0 0 2px;
+    }
+  }
+  &.zip {
+    background: #333;
+    &:hover,
+    &:focus {
+      box-shadow: rgba(255, 255, 255, 0.6) 0 0 0 1px inset, #333 0 0 0 2px;
+    }
+  }
+  &.other {
+    background: #555;
+    &:hover,
+    &:focus {
+      box-shadow: rgba(255, 255, 255, 0.6) 0 0 0 1px inset, #555 0 0 0 2px;
+    }
+  }
+}
+a .fileType {
+  color: $fontInvert;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  .fileType {
+    color: $fontInvert;
+    text-decoration: none;
+    &.pdf {
+      box-shadow: rgba(255, 255, 255, 0.6) 0 0 0 1px inset, #c00 0 0 0 2px;
+    }
+    &.doc,
+    &.docx,
+    &.odt {
+      box-shadow: rgba(255, 255, 255, 0.6) 0 0 0 1px inset, #1b76cb 0 0 0 2px;
+    }
+    &.xls,
+    &.xlsx,
+    &.csv,
+    &.ods {
+      box-shadow: rgba(255, 255, 255, 0.6) 0 0 0 1px inset, #48920f 0 0 0 2px;
+    }
+    &.ppt,
+    &.pptx,
+    &.odp {
+      box-shadow: rgba(255, 255, 255, 0.6) 0 0 0 1px inset, #c43e1c 0 0 0 2px;
+    }
+    &.txt {
+      box-shadow: rgba(255, 255, 255, 0.6) 0 0 0 1px inset, #1d98e4 0 0 0 2px;
+    }
+    &.jpg {
+      box-shadow: rgba(255, 255, 255, 0.6) 0 0 0 1px inset, #0b9fb2 0 0 0 2px;
+    }
+    &.mp3,
+    &.mp4 {
+      box-shadow: rgba(255, 255, 255, 0.6) 0 0 0 1px inset, #9d3a89 0 0 0 2px;
+    }
+    &.mov,
+    &.wmv {
+      box-shadow: rgba(255, 255, 255, 0.6) 0 0 0 1px inset, #5843a9 0 0 0 2px;
+    }
+    &.zip {
+      box-shadow: rgba(255, 255, 255, 0.6) 0 0 0 1px inset, #333 0 0 0 2px;
+    }
+    &.other {
+      box-shadow: rgba(255, 255, 255, 0.6) 0 0 0 1px inset, #555 0 0 0 2px;
+    }
+  }
+}

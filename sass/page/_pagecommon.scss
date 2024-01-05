@@ -1,0 +1,90 @@
+.conditional_searchbtn {
+  // padding: 0.3em 1em;
+  font-size: 1.125em;
+  border-radius: 5px 5px 0 0;
+  background-image: url(../images/icon/icon_search_white.svg);
+  background-position: 20px 12px;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  padding-left: 50px;
+  background-color: $primaryColor;
+  color: #fff;
+  margin: 0;
+  &:hover,
+  &:focus {
+    background-image: url(../images/icon/icon_search_white.svg);
+    background-position: 20px 12px;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-color: darken($color: $primaryColor, $amount: 10);
+    color: #fff;
+  }
+}
+.conditional_searchblock {
+  padding: 1em 2em;
+  border-radius: 0 5px 5px 5px;
+  background-color: #f4f4f4;
+  margin-bottom: 2em;
+  font-size: 1.125em;
+  @include screen('xs_mobile') {
+    padding: 1em;
+  }
+  .btn_grp {
+    margin: 1em 0 0;
+  }
+}
+// 相關網站
+.websiteslist_block {
+  .websiteslist_group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .websiteslist {
+      flex: 0 0 auto;
+      flex-basis: 23%;
+      margin: 0 0 2em;
+      @include screen('tablet') {
+        flex-basis: 31%;
+      }
+      @include screen('mobile') {
+        flex-basis: 48%;
+      }
+      @include screen('xs_mobile') {
+        flex-basis: 100%;
+      }
+      a {
+        display: block;
+        @include aSetting(#666);
+        position: relative;
+        .image {
+          width: 100%;
+          margin-bottom: 1em;
+          position: relative;
+          height: 100px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          background: #fff;
+          border-radius: 3px;
+          transition: 0.3s;
+
+          img {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            max-width: 95%;
+            max-height: 80%;
+            margin: auto;
+          }
+        }
+        &:hover {
+          .image {
+            &:hover {
+              box-shadow: 0 12px 3em -1em rgba(0, 0, 0, 0.5);
+            }
+          }
+        }
+      }
+    }
+  }
+}
