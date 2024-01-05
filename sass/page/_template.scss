@@ -62,10 +62,10 @@ body {
     padding-top: 70px;
   }
   > .container {
-    @include gutter(100px); //gutter 代表左右要留白
+    @include gutter(140px); //gutter 代表左右要留白
     display: flex;
     @include screen('tablet') {
-      @include gutter(60px);
+      @include gutter(80px);
     }
   }
   .center_block {

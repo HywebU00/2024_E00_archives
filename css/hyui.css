@@ -1329,6 +1329,7 @@ th {
   z-index: 9;
   color: #222;
   font-size: 1em;
+  display: none;
 }
 @media screen and (max-width: 767px) {
   .accesskey {
@@ -1351,7 +1352,7 @@ a.goCenter {
   opacity: 0;
   transition: 0.5s;
   border-radius: 0px 0px 4px 4px;
-  color: #FFF;
+  color: #fff;
 }
 @media screen and (max-width: 767px) {
   a.goCenter {
@@ -1368,7 +1369,7 @@ a.goCenter:hover, a.goCenter:focus {
   display: block;
   padding: 0.5em;
   border: 2px solid #003f60;
-  background: #FFF;
+  background: #fff;
   color: #666;
   overflow: hidden;
   line-height: 1.45em;
@@ -1472,7 +1473,7 @@ a.goCenter:hover, a.goCenter:focus {
   display: inline-block;
   width: 22%;
   margin: 0 1% 1em;
-  border: 1px solid #DDD;
+  border: 1px solid #ddd;
 }
 @media screen and (max-width: 767px) {
   .no-js .adSlider .img-container {
@@ -3096,7 +3097,7 @@ div.tag ul li a:hover, div.tag ul li a:focus {
   border-radius: 50%;
   background: url(../images/basic/top.png) no-repeat center top rgba(0, 0, 0, 0.6);
   text-align: center;
-  color: #FFF;
+  color: #fff;
   line-height: 50px;
   text-decoration: none;
   position: fixed;
@@ -4472,7 +4473,7 @@ footer {
   zoom: 1;
   text-align: left;
   font-size: 0.813em;
-  padding: 1em 0;
+  padding: 0;
 }
 footer:before, footer:after {
   content: "";
@@ -4490,7 +4491,7 @@ footer .container {
   display: flex;
 }
 footer .container > div {
-  padding-bottom: 1em;
+  padding-bottom: 0;
 }
 @media screen and (max-width: 991px) {
   footer .container {
@@ -9152,8 +9153,8 @@ body.noscroll {
 .innerpage > .container {
   position: relative;
   min-height: 1px;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 70px;
+  padding-right: 70px;
   box-sizing: border-box;
   display: flex;
 }
@@ -9161,8 +9162,8 @@ body.noscroll {
   .innerpage > .container {
     position: relative;
     min-height: 1px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
     box-sizing: border-box;
   }
 }
