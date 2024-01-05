@@ -4,6 +4,7 @@ footer {
   text-align: left;
   font-size: 0.813em;
   padding: 0;
+  border-top: 1px solid #e2e2e2;
   .container {
     @include gutter(0);
     > div {
