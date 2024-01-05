@@ -12,6 +12,18 @@
     color: $primaryColor;
     font-size: 1.25em;
     font-weight: bolder;
+    padding-left: 1em;
+    position: relative;
+    &:before {
+      content: '';
+      width: 0.3em;
+      height: 0.8em;
+      background-color: $linkColor;
+      border-radius: 2px;
+      position: absolute;
+      top: 5px;
+      left: 0;
+    }
   }
 }
 // 條件查詢
