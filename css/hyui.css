@@ -3126,23 +3126,6 @@ div.tag ul li a:hover, div.tag ul li a:focus {
     width: 100%;
   }
 }
-.header:before {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background: #fff;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-  pointer-events: none;
-  z-index: -1;
-}
-@media screen and (max-width: 767px) {
-  .header:before {
-    height: 60px;
-  }
-}
 .header > .container .searchCtrl, .header > .container .sidebarCtrl {
   width: 60px !important;
   height: 60px !important;
@@ -4501,8 +4484,8 @@ footer:after {
 footer .container {
   position: relative;
   min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 0;
+  padding-right: 0;
   box-sizing: border-box;
   display: flex;
 }
@@ -4569,7 +4552,7 @@ footer .footer_link li a {
   display: block;
   padding: 0.5em 1em;
   background: #003f60;
-  color: #FFF;
+  color: #fff;
   border-radius: 4px;
   text-align: center;
   transition: all 0.3s ease-out;
@@ -9112,6 +9095,9 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  background-color: #f4f4f4;
+}
 body.noscroll {
   position: static !important;
   width: 100%;
@@ -9123,8 +9109,10 @@ body.noscroll {
 }
 
 .wrapper {
-  width: 100%;
+  width: 1440px;
   margin: 0px auto;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background: #fff;
 }
 @media screen and (max-width: 767px) {
   .wrapper {
@@ -9164,8 +9152,8 @@ body.noscroll {
 .innerpage > .container {
   position: relative;
   min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 50px;
+  padding-right: 50px;
   box-sizing: border-box;
   display: flex;
 }
