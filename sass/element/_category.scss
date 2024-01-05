@@ -11,24 +11,25 @@
     }
   }
   a {
-    border: 1px solid #666;
+    border: 2px solid #ddd;
     padding: 0.5em 1.2em;
     display: block;
-    color: #fff;
+    color: $primaryColor;
     box-sizing: border-box;
     border-radius: 5px;
-    background-color: #666;
+    @include gradient(#f4f4f4, #fff, vertical);
     &:hover,
     &:focus {
-      color: #fff;
-      background: $primaryColor;
-      border: 1px solid $primaryColor;
+      color: $primaryColor;
+      background: $linkColor;
+      border: 2px solid $linkColor;
       box-shadow: none;
       text-decoration: none;
     }
     &.active {
-      color: #fff;
-      background: $secondaryColor;
+      color: $primaryColor;
+      background: $linkColor;
+      border: 2px solid $linkColor;
     }
     span {
       font-size: 0.813em;

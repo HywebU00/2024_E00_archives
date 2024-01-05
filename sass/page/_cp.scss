@@ -70,12 +70,12 @@ h2.title {
   h3 {
     position: relative;
     padding-left: 1em;
-    color: $lightColor;
+    color: $primaryColor;
     &:before {
       content: '';
       width: 0.3em;
       height: 0.8em;
-      background-color: $lightColor;
+      background-color: $linkColor;
       border-radius: 2px;
       position: absolute;
       top: 5px;

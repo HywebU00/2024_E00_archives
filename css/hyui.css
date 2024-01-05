@@ -2068,7 +2068,7 @@ kbd kbd {
 
 .breadcrumb {
   padding: 1em 0em 0;
-  margin: 0px auto 5px;
+  margin: 0px auto 2em;
 }
 .breadcrumb ul {
   margin: 0;
@@ -3018,24 +3018,26 @@ em[tooltip]:hover, em[tooltip]:focus {
   float: left;
 }
 .category a {
-  border: 1px solid #666;
+  border: 2px solid #ddd;
   padding: 0.5em 1.2em;
   display: block;
-  color: #fff;
+  color: #003f60;
   box-sizing: border-box;
   border-radius: 5px;
-  background-color: #666;
+  background: #f4f4f4;
+  background: linear-gradient(to bottom, #f4f4f4, #fff);
 }
 .category a:hover, .category a:focus {
-  color: #fff;
-  background: #003f60;
-  border: 1px solid #003f60;
+  color: #003f60;
+  background: #8ffdff;
+  border: 2px solid #8ffdff;
   box-shadow: none;
   text-decoration: none;
 }
 .category a.active {
-  color: #fff;
-  background: #195e88;
+  color: #003f60;
+  background: #8ffdff;
+  border: 2px solid #8ffdff;
 }
 .category a span {
   font-size: 0.813em;
@@ -7118,7 +7120,7 @@ table .aRight {
   margin-bottom: 2em;
 }
 .directions .title {
-  color: #028467;
+  color: #003f60;
   font-size: 1.25em;
   font-weight: bolder;
 }
@@ -9406,13 +9408,13 @@ h2.title {
 .cp h3 {
   position: relative;
   padding-left: 1em;
-  color: #028467;
+  color: #003f60;
 }
 .cp h3:before {
   content: "";
   width: 0.3em;
   height: 0.8em;
-  background-color: #028467;
+  background-color: #8ffdff;
   border-radius: 2px;
   position: absolute;
   top: 5px;
@@ -9498,7 +9500,7 @@ h2.title {
   outline: none;
 }
 .file_download li .downloadFiles a:focus {
-  box-shadow: #68a2d9 0 0 0 1px inset;
+  box-shadow: #8ffdff 0 0 0 1px inset;
   outline: none;
 }
 
