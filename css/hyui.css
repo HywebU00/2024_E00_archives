@@ -2078,6 +2078,7 @@ kbd kbd {
 .breadcrumb ul li {
   display: inline-block;
   margin: 0px 0.1em 0.1em 0px;
+  color: #666;
 }
 .breadcrumb ul li:first-child:before {
   content: "";
@@ -7111,20 +7112,6 @@ table .aRight {
   text-align: center;
 }
 
-.directions {
-  padding: 2em;
-  border-radius: 5px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  font-size: 1.125em;
-  line-height: 1.7em;
-  margin-bottom: 2em;
-}
-.directions .title {
-  color: #003f60;
-  font-size: 1.25em;
-  font-weight: bolder;
-}
-
 .sub_menu ul, .sub_menu ol {
   display: flex;
   flex-direction: row;
@@ -8437,7 +8424,7 @@ a:focus .fileType.other {
   max-width: 900px;
   margin: 1em auto;
   position: relative;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   background-color: #fff;
   padding: 1em;
   border-radius: 5px;
@@ -8481,7 +8468,7 @@ a:focus .fileType.other {
   max-width: 900px;
   margin: 1em auto;
   position: relative;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   background-color: #fff;
   padding: 1em;
   border-radius: 5px;
@@ -9583,9 +9570,10 @@ h2.title {
   display: flex;
   padding: 2em;
   border-radius: 5px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   margin-bottom: 2em;
+  border: 1px solid #eee;
   background-color: #f2f2f2;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 @media (max-width: 700px) {
   .bookcontent_block {
@@ -9638,6 +9626,22 @@ h2.title {
   width: 20%;
 }
 
+.directions {
+  padding: 2em;
+  border-radius: 5px;
+  font-size: 1.125em;
+  line-height: 1.7em;
+  margin-bottom: 2em;
+  border: 1px solid #eee;
+  background-color: #f2f2f2;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.directions .title {
+  color: #003f60;
+  font-size: 1.25em;
+  font-weight: bolder;
+}
+
 .conditional_searchbtn {
   font-size: 1.125em;
   border-radius: 5px 5px 0 0;
@@ -9662,9 +9666,11 @@ h2.title {
 .conditional_searchblock {
   padding: 1em 2em;
   border-radius: 0 5px 5px 5px;
-  background-color: #f4f4f4;
   margin-bottom: 2em;
   font-size: 1.125em;
+  border: 1px solid #eee;
+  background-color: #f2f2f2;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 @media screen and (max-width: 575px) {
   .conditional_searchblock {

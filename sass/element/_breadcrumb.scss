@@ -1,12 +1,12 @@
 .breadcrumb {
   padding: 1em 0em 0;
-
   margin: 0px auto 2em;
   ul {
     @include li-reset;
     li {
       display: inline-block;
       margin: 0px 0.1em 0.1em 0px;
+      color: #666;
       &:before {
         @extend %slash;
       }
