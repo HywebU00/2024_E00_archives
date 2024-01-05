@@ -681,7 +681,7 @@
       left: 0;
       right: 0;
       bottom: 0;
-      object-fit: cover;
+      object-fit: contain;
     }
   }
   p {
@@ -691,10 +691,11 @@
     color: #fff;
     padding: 0.5em;
     box-sizing: border-box;
-    @include text-overflow;
+    // @include text-overflow;
+    @include text-line(2, 23px);
     bottom: 0px;
     width: 100%;
-    height: 2.5em;
+    height: 4em;
     line-height: 1.5em;
     margin: 0px;
     z-index: 2;
@@ -724,10 +725,25 @@
     position: relative;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     background-color: #fff;
-    padding: 1.5em;
+    padding: 1em;
     border-radius: 5px;
     .img-container {
       @include aspect-ratio(4, 3);
+
+      img {
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        max-width: 100%;
+        max-height: 100%;
+        margin: auto;
+      }
+    }
+    p {
+      height: 2.5em;
     }
   }
   .Slider-nav {
@@ -738,14 +754,16 @@
     position: relative;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     background-color: #fff;
-    padding: 1.5em;
+    padding: 1em;
     border-radius: 5px;
+
     .img-container {
       @include aspect-ratio(4, 3);
       p {
         display: none;
       }
     }
+
     /*正在動作的縮圖*/
     .slick-slide.slick-current {
       opacity: 1;
